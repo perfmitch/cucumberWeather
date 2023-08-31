@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.498 s <<< FAILURE! - in runner.TestRunner
+initializationError(runner.TestRunner)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalArgumentException: 
+Couldn't create a file output stream for 'cucumber-report-html\report.html'.
+Make sure the the file isn't a directory.
+
+Note: This usually happens when plugins write to colliding paths.
+For example: 'json:target/cucumber/report.json, html:target/cucumber'
+You can fix this by making the paths do no collide.
+For example: 'json:target/cucumber/report.json, html:target/cucumber/report.html'
+The details are in the stack trace below:
+Caused by: java.io.FileNotFoundException: cucumber-report-html\report.html (Access is denied)
+
